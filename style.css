@@ -1,0 +1,156 @@
+* {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  /* Asegúrate de que se aplique la variante "700" de la fuente */
+}
+
+/* inicio del grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 339px;
+}
+
+.title h1,
+p {
+  color: hsl(303, 10%, 53%);
+}
+
+h1 {
+  font-size: 40px;
+  margin-left: 115px;
+}
+
+.title p {
+  margin-left: 115px;
+
+}
+
+.containerStar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 59px;
+  margin-left: 88px;
+}
+
+.star {
+  background-color: hsl(300, 24%, 96%);
+  margin-bottom: 13px;
+  margin-right: 247px;
+  padding-left: 21px;
+}
+
+.star1 {
+  margin-left: -48px;
+  margin-right: 287px;
+}
+
+.star2 {
+  margin-left: -2px;
+  margin-right: 252px;
+}
+
+.star3 {
+  margin-left: 42px;
+  margin-right: 200px;
+}
+
+.star p {
+  display: inline-block;
+  color: hsl(300, 43%, 22%);
+  padding-left: 24px;
+}
+
+
+/* aqui comienza la parte de comentarios */
+.comments {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.comments-container {
+  background-color: hsl(300, 43%, 22%);
+  height: 226px;
+  width: 317px;
+  padding: 25px;
+}
+
+.comments-container p {
+  color: hsl(300, 24%, 96%);
+  font-weight: 400;
+}
+
+.check {
+  display: grid;
+  grid-template-columns: 0.3fr auto;
+}
+
+.comments img {
+  border-radius: 42px;
+  width: 43px;
+}
+
+.comments div .verified {
+  color: hsl(333, 80%, 67%);
+  grid-column: span 2;
+  text-align: center;
+}
+
+.verified {
+  margin-left: -80px;
+  margin-top: -5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* movil */
+@media (max-width: 1237px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 224px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .containerStar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 76px;
+  }
+  .title p {
+    text-align: center;
+  }
+  .star {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .star1,
+  .star2,
+  .star3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .comments-container {
+    margin-bottom: 18px;
+}
+}
